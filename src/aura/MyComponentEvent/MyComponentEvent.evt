@@ -1,0 +1,2 @@
+<!-- c:MyComponentEvent -->
+<aura:event type="APPLICATION" description="A component level event that will be fired by the poller" />

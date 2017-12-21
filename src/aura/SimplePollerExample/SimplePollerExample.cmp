@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="eventCount" type="Integer" default="0"/> 
+    <aura:attribute name="eventMessages" type="String[]"/> 
+    <lightning:button label="Start polling" onclick="{!c.startPolling}" />
+    <lightning:button label="Stop polling" onclick="{!c.stopPolling}" /><br/>
+    <aura:handler event="c:MyComponentEvent" action="{!c.handleComponentEvent}"/>
+    <aura:iteration items="{!v.eventMessages}" var="msg">
+        {!msg}<br/>
+    </aura:iteration>
+</aura:component>

@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="eventCount" type="Integer" default="0"/> 
+    <lightning:button label="Start progress" onclick="{!c.startPolling}" />
+    <lightning:button label="Reset Progress" onclick="{!c.resetProgress}" /><br/>
+    <aura:handler event="c:MyComponentEvent" action="{!c.handleComponentEvent}"/>
+    <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{!(v.eventCount * 10 )}" role="progressbar">
+        Progress: {!v.eventCount*10} %
+        <span class="slds-progress-bar__value" style="{!'width: '+ (v.eventCount * 10 )+'%;'}">
+            <span class="slds-assistive-text">Progress: {!v.eventCount*10}%</span>
+        </span>
+    </div>
+</aura:component>
