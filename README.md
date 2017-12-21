@@ -8,6 +8,10 @@ The polling component leverages Lightning Events to drive the polling behaviour.
 
 ### Using this component
 
+1. Install the component from AppExchange (link will be available after the component is listed). 
+2. Add the component to the corresponding Lightning Page (Record Page, Home, App Page or Community Page). (__Note : If you do not add the Lightning Poller component to your Lightning Page, the events that start and stop polling will not be available to your other components __)
+3. Create a component that will start/stop polling and implement the business logic.
+
 ###  Starting and Stopping Polling
 
 In order to start polling, you fire off a `e.poller:startPolling` event. This event takes two parameters:
