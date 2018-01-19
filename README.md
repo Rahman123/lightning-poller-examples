@@ -1,6 +1,6 @@
 ## Lightning Poller Component
 
-LightningPoller is a generic polling component that is available on the AppExchange (currently under security review). If you need a link to the managed contact me at anarasimhan@salesforce.com .
+LightningPoller is a generic polling component that is available on the AppExchange.  Click [here](https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000Ecs5nUAB) to view the component on AppExchange.
 
 This repository is for illustrating how to use that component with a couple of simple examples. Pleaes contribute more examples and/or issues.
 
